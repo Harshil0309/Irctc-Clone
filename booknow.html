@@ -1,0 +1,181 @@
+<DOCTYPE html>
+
+<html><head>
+<style>
+    .header{
+         background-color: black;
+                      
+            margin-bottom: 750px;
+            position: absolute;
+            
+            top: 0;
+            left: 0;
+            height: 300px;
+            width: 100%;
+            line-height: 200px;
+            color: white;
+
+        }
+    .headline{
+        	font-style: italic;
+
+        	font-size: 60px;
+        	color: white;
+        }
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+    input[type=date]{width=100px;
+        padding-top: 10px;
+   width: 200px;
+        padding-left: 10px;
+         padding-bottom: 10px;
+         box-sizing: border-box;
+        border: 1px solid #ccc;
+         border-radius: 4px;
+        font-size: 13px;
+        margin-top: 10px;
+        margin-bottom: 12px;
+
+    }
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container {
+    border-radius: 5px;
+    margin-top: 350px;
+    font-size: 20px;
+    width: 200px;
+    padding: 10px;
+}
+    
+    
+ 
+    
+    
+</style>
+</head>
+<body>
+    <div class="header">
+        <div class="headline">
+			<p align="center">Book Now</p>	
+			</div>	
+        
+        
+    </div>
+    
+
+<div class="container">
+  <form action="cnfrmd.php" name="frm" method="POST" >
+    <label for="fname" style="font font-style: italic;" >FROM-TO</label>
+    <select required style="border-radius: 30px;border-color: blue" name="txt1" >
+ <option value="">None</option>
+      <option value="Lucknow to New Delhi"   >lko-ndls</option>
+      <option value="New Delhi to Lucknow">ndls-lko</option>
+      <option value="Bandra Terminus to Lucknow">bdts-lko</option>
+      <option value="Lucknow to Bandra Terminus">lko-bdts</option>
+      <option value="Bandra Terminus to New Delhi">bdts-ndls</option>
+      
+      <option value="New Delhi to Bandra Terminus">ndls-bdts</option>
+    </select>
+    
+
+   
+    
+<label for="dat"  >DATE </label><br>
+     <input required=""  type="DATE" style="border-radius: 30px; border-color: blue " name="txt2" min="2019-02-11" max="2019-05-11" ><br>
+      
+
+    
+      <label for="">NO OF TICKETS</label>
+      
+      
+      <select required="" id="" name="txt3" style="border-radius: 30px; border-color: blue" >
+        <option value="">None</option>
+         <option value="1" >1</option>
+ <option value="2">2</option>
+  <option value="3">3</option>
+   <option value="4">4</option>
+    <option value="5">5</option>
+      </select>
+      
+      
+      
+       <label for="">CLASS</label>
+      <select required="" id="" name="txt4" style="border-radius: 30px; border-color: blue" >
+      <option value="">None</option> <option value="Ac" >ac</option>
+     
+       <option value="Sleeper">sleeper </option>
+      <option value="Chair Car" >chair car</option>
+       <option value="General">general </option>
+      </select>
+  
+
+    <a href="cnfrmd.php"><input type="submit" value="Book ticket"  ></a>
+      
+  </form>
+</div>
+
+<script type="text/javascript">
+   function myfunction(){
+    window.alert("YOUR TICKET IS BOOKED ")
+   }
+  
+
+    function validatesignup(){
+        var a=frm.txt1.value;
+        var b=frm.txt2.value;
+        var c=frm.txt3.value;
+        var d=frm.txt4.value;
+        
+        if(a==""){
+            alert("Please enter your first name .");
+            return false;
+        }
+        if(b==""){
+            alert("Please enter  your last name .");
+            return false;
+        }
+        if(c==""){
+            alert("Please enter your email id .");
+            return false;
+        }
+        if(d==""){
+            alert("Please enter a password .");
+            return false;
+        
+        }
+        
+        else{
+          return myfunction()
+        }
+        
+    }
+    
+    </script>
+    <hr>
+    <p align="center" > Copyright © 2019 -<a href="dropdown.html"> 
+ www.irctc.co.in.</a> All Rights Reserved
+
+Designed and Hosted by CRIS IRCTC</p>
+
+
+</body></html>
